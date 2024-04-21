@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Job Portal Login</title>
+  <link href="signin.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <img src="logo.png" alt="Job Portal Logo">
+      <h1>Job Portal</h1>
+      <p>Connecting Employers with Top Talent</p>
+    </header>
+    <main>
+      <h2>Welcome Back!</h2>
+      <p>Please select your account type to proceed.</p>
+      <div class="account-type">
+        <a href="jobseeker_signin.jsp"><button id="job-seeker">Job Seeker</button></a>
+        <a href="employer_signin.jsp"><button id="employer">Employer</button></a>
+      </div>
+      <form id="login-form" style="display: none;">
+        <label for="username">Username/Email:</label>
+        <input type="text" id="username" name="username" required>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+        <div class="checkbox">
+          <input type="checkbox" id="show-password">
+          <label for="show-password">Show Password</label>
+        </div>
+        <button type="submit">Login</button>
+        <a href="#">Forgot Password?</a>
+        <a href="#">New User? Sign Up Here!</a>
+      </form>
+    </main>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
